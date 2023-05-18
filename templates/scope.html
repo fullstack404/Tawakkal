@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+<html lang="en">
+
+<head>
+    {% block extrahead %}
+    <!-- External stylesheet link -->
+    <link rel="stylesheet" href="{% static './stylesheets/scope.css' %}">
+
+     <!-- JS Link-->
+     <script src="{% static './JS/reveal.js' %}"></script>
+     
+    {% endblock %}
+</head>
+{% block content %}
+<body>
+    <div class="heading">
+        <h3>Scope of Work</h3>
+    </div>
+
+    <div class="scope reveal" id="first-row">
+        <div><img src="{% static 'E:\Tawakkal\static\media\3_bhk_apartment-for-sale-koraman.jpg' %}" alt="">
+            <h5>Residential Apartments</h5>
+        </div>
+        <div><img src="{% static 'E:\Tawakkal\static\media\villas-for-rent-in-algarve-portu.jpg' %}" alt="">
+            <h5>Independent Houses</h5>
+        </div>
+        <div><img src="{% static 'E:\Tawakkal\static\media\depositphotos_2560747-stock-phot.jpg' %}" alt="">
+            <h5>Commercial</h5>
+        </div>
+    </div>
+
+    <div class="scope reveal">
+        <div><img src="{% static 'E:\Tawakkal\static\media\IMG-20200811-WA0055-1024x713.jpg' %}" alt="">
+            <h5>Customized Homes</h5>
+        </div>
+        <div><img src="{% static 'E:\Tawakkal\static\media\e1982890-d4c9-4ce6-865d-e5a53670.jpg' %}" alt="">
+            <h5>Row-Housing</h5>
+        </div>
+        <div><img src="{% static 'E:\Tawakkal\static\media\Interior-Design-of-Luxury-Modern.jpg' %}" alt="">
+            <h5>Interiors</h5>
+        </div>
+    </div><br><br>
+
+</body>
+{% endblock content %}
+</html>

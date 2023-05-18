@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+<html lang="en">
+
+<head>
+    {% block extrahead %}
+    <!-- External stylesheet link -->
+    <link rel="stylesheet" href="{% static './stylesheets/how_it_works.css' %}">
+
+    <!-- JS Link-->
+    <script src="{% static 'E:\Tawakkal\static\JS\how_it_works.js' %}"></script>
+
+    {% endblock %}
+</head>
+{% block content %}
+
+<body>
+    <div class="heading">
+        <h3>How it Works</h3>
+    </div>
+
+    <div class="process">
+        <div class="flip-card box1">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    1
+                </div>
+                <div class="flip-card-back">
+                    <h5 style="font-weight:600;text-align:center"> Meeting with client</h5>
+                    <p>Client approaches our company for his project after his due diligence's on us and communicates about his requirements.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card box2">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    2
+                </div>
+                <div class="flip-card-back">
+                    <h5 style="font-weight:600;text-align:center">Proposal</h5>
+                    <p>The Company further drafts a proposal as per the client’s requirement which consists in depth information of our service.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card box3">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    3
+                </div>
+                <div class="flip-card-back">
+                    <h5 style="font-weight:600;text-align:center">Acceptance of proposal</h5>
+                    <p> After reviewing the proposal the client further decides on accepting the proposal.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card box4">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    4
+                </div>
+                <div class="flip-card-back">
+                    <h5 style="font-weight:600;text-align:center">Negotiations</h5>
+                    <p>After accepting our proposal the client is given an opportunity to lay down his conditions and clear all his doubts regarding our services.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card box5">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    5
+                </div>
+                <div class="flip-card-back">
+                    <h5 style="font-weight:600;text-align:center">Drafting of Agreement</h5>
+                    <p>All the aspects of negotiation are then drafted into an agreement, which is signed and agreed by both the parties.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card box6">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    6
+                </div>
+                <div class="flip-card-back">
+                    <h5 style="font-weight:600;text-align:center">Initiation of service</h5>
+                    <p>After the approvals from relevant authority and sanction of plans the services shall commence and end at the stipulated time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock content %}
+
+</html>

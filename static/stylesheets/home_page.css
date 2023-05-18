@@ -1,0 +1,261 @@
+#myVideo {
+  width: 100%;
+  filter: brightness(30%);
+  height: 80%;
+}
+
+.one-liner {
+  color: var(--textcolor);
+  font-weight: 800;
+  font-size: 4.8em;
+  width: 95%;
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: -webkit-linear-gradient(#EAC117, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.second-part {
+  width: 100%;
+  background-color: white;
+}
+
+.second-part h1 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  font-weight: 400;
+  position: relative;
+  top: 50px;
+}
+
+.second-part h1 span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.second-part .container {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  top: 200px;
+  text-align: center;
+}
+
+#completed {
+  right: 350px;
+  width: 25%;
+}
+
+#on-going {
+  top: -100px;
+  left: 350px;
+  justify-content: center;
+  align-items: center;
+}
+
+#on-going .button-grp {
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.number {
+  color: #EAC117;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  color: #EAC117;
+  text-align: center;
+  font-size: 1rem;
+  width: 200px;
+  height: 65px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+}
+
+.sbutton {
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  color: #EAC117;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 15px;
+  width: 200px;
+  height: 65px;
+  font-size: 1rem;
+}
+
+.button-grp {
+  display: flex;
+}
+
+.sbutton button{
+  width:400px;
+}
+
+.button-grp button {
+  width: 3570px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.sbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.sbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.sbutton:hover span {
+  padding-right: 25px;
+}
+
+.sbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.heading {
+  width: 100%;
+  height: 200px;
+  background-color: #EAC117;
+}
+
+.heading h1 {
+  color: white;
+  padding-top: 70px;
+  padding-left: 30px;
+}
+
+.button-grp a{
+  text-decoration: none;
+  color:#EAC117;
+}
+
+.container{
+  position: relative;
+  bottom:100px;
+}
+
+.carousel-item p{
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width:480px) {
+  #myVideo {
+    height: 80vh;
+    object-fit: cover;
+    z-index: -100;
+  }
+
+  .one-liner {
+    /* width: 75%; */
+    font-size: 1.8em;
+    height: 50vh;
+    /* top: 25%; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cont-cus {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second-part {
+    height: auto;
+    width: 100%;
+  }
+
+  .second-part h1 span {
+    font-size: 2rem;
+  }
+
+  .sbutton,
+  .button {
+    font-size: 1rem;
+  }
+
+  #on-going {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #completed {
+    top: 15vh;
+    right: 0px;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #completed .button-grp {
+    width: 100%;
+  }
+
+  .rc {
+    margin-left: -10px;
+  }
+
+  .container{
+    position: static;
+  }
+
+  .carousel-item p{
+    font-size: 1.3rem;
+  }
+}
